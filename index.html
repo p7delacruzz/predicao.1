@@ -71,7 +71,7 @@
       resultado.innerHTML = "🔄 Analisando...";
 
       try {
-        const res = await fetch(`https://SEULINK.onrender.com/predicao?ticker=${ticker}`);
+        const res = await fetch(`https://predicao-1.vercel.app.onrender.com/predicao?ticker=${ticker}`);
         const data = await res.json();
 
         if (data.erro) {
